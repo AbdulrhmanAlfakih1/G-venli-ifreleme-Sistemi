@@ -60,12 +60,13 @@ Projeyi çalıştırmak için:
 ## Ekran Görüntüleri
 ![image](https://github.com/user-attachments/assets/88bad27e-ee27-40f5-abb5-161499f6e4cc)
 
-![image](https://github.com/user-attachments/assets/215a3185-80a4-441f-857a-8576661f179d)
-
-![image](https://github.com/user-attachments/assets/1af1bf39-39ee-4322-8640-1241c74c9845)
+![image](https://github.com/user-attachments/assets/065dfe19-9ac4-4f71-b15b-85160c9e7702)
 
 
-![image](https://github.com/user-attachments/assets/96462043-732c-47b9-b769-bfd43b60119d)
+![image](https://github.com/user-attachments/assets/c955b342-9162-4dc0-bffa-57c21b60f3d1)
+
+
+![image](https://github.com/user-attachments/assets/8e4d1609-9b0b-482c-931e-8a22aafa20c0)
 
 ---
 
