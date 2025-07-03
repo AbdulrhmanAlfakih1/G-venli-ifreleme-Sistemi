@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Güvenli Şifreleme Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Güvenli Şifreleme Sistemi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="ecc.html">ECC Şifreleme</a></li>
+                <li><a href="sha512.html">SHA512 Özet</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="sayfa-basligi">İletişim</h2>
+        
+        <div class="arac-kapsayici">
+            <form id="iletisim-formu">
+                <div class="giris-grubu">
+                    <label for="isim">Adınız:</label>
+                    <input type="text" id="isim" required>
+                </div>
+                
+                <div class="giris-grubu">
+                    <label for="email">E-posta Adresiniz:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="giris-grubu">
+                    <label for="mesaj">Mesajınız:</label>
+                    <textarea id="mesaj" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="guncel-yil">2025</span> Güvenli Şifreleme Sistemi - Tüm hakları saklıdır -  Abdulrahman Alfakih - 2012721315</p>
+    </footer>
+
+    <script>
+        document.getElementById('iletisim-formu').addEventListener('submit', function(e) {
+            e.preventDefault();
+            uyariGoster('Mesajınız gönderildi! Size en kısa sürede dönüş yapacağız.', 'basari');
+            this.reset();
+        });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #34495e;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Ana sayfa stilleri */
+.hosgeldiniz {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ozellikler {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ozellik-karti {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.buton {
+    display: inline-block;
+    background: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buton:hover {
+    background: #16a085;
+}
+
+/* Diğer sayfalar için stiller */
+.sayfa-basligi {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.arac-kapsayici {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+textarea, input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+.sonuc {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+/* ECC şifreleme sayfası özel stiller */
+.sifre-coz-textarea {
+    min-height: 120px;
+}
+
+.giris-grubu {
+    margin-bottom: 20px;
+}
+
+.sonuc-kapsayici {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.hata-mesaji {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.yukleniyor {
+    color: #0288d1;
+    font-style: italic;
+}
+
+.basari-sonuc {
+    background: #e8f5e9;
+    padding: 10px;
+    border-left: 4px solid #4caf50;
+}
+
+.kopya-buton {
+    background: #2196f3;
+    margin-top: 10px;
+}
+
+.kopya-buton:hover {
+    background: #0b7dda;
+}
+
+/* Karanlık mod */
+.karanlik-mod {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.karanlik-mod header {
+    background-color: #1e1e1e;
+}
+
+.karanlik-mod nav ul {
+    background-color: #252525;
+}
+
+.karanlik-mod .arac-kapsayici,
+.karanlik-mod .ozellik-karti {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.karanlik-mod textarea,
+.karanlik-mod input[type="text"],
+.karanlik-mod input[type="file"] {
+    background-color: #252525;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+.karanlik-mod .sonuc {
+    background-color: #252525;
+    border-color: #333;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .ozellikler {
+        flex-direction: column;
+    }
+    
+    .ozellik-karti {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sayfa-basligi {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    textarea, input[type="text"], input[type="file"] {
+        padding: 8px;
+    }
+    
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECC Şifreleme - Güvenli Şifreleme Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Güvenli Şifreleme Sistemi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="ecc.html">ECC Şifreleme</a></li>
+                <li><a href="sha512.html">SHA512 Özet</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="sayfa-basligi">Eliptik Eğri Kriptografisi (ECC) ile Şifreleme</h2>
+        
+        <div class="arac-kapsayici">
+            <h3>Metni Şifrele</h3>
+            <div class="giris-grubu">
+                <label for="ecc-metin">Şifrelenecek metin:</label>
+                <textarea id="ecc-metin" placeholder="Şifrelemek istediğiniz metni girin..."></textarea>
+                
+                <label for="ecc-anahtar">Gizli anahtar:</label>
+                <input type="text" id="ecc-anahtar" placeholder="Gizli anahtar girin (isteğe bağlı)">
+                
+                <button onclick="metniSifrele()">Metni Şifrele</button>
+            </div>
+            <div class="sonuc-kapsayici">
+                <h4>Sonuç:</h4>
+                <div class="sonuc" id="ecc-sifreleme-sonuc"></div>
+            </div>
+        </div>
+        
+        <div class="arac-kapsayici">
+            <h3>Şifreyi Çöz</h3>
+            <div class="giris-grubu">
+                <label for="ecc-sifreli">Şifreli metin:</label>
+                <textarea id="ecc-sifreli" placeholder="Şifreli metni girin..." class="sifre-coz-textarea"></textarea>
+                
+                <label for="ecc-cozum-anahtar">Gizli anahtar:</label>
+                <input type="text" id="ecc-cozum-anahtar" placeholder="Gizli anahtar girin">
+                
+                <button onclick="sifreyiCoz()">Şifreyi Çöz</button>
+            </div>
+            <div class="sonuc-kapsayici">
+                <h4>Sonuç:</h4>
+                <div class="sonuc" id="ecc-cozum-sonuc"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="guncel-yil">2025</span> Güvenli Şifreleme Sistemi - Tüm hakları saklıdır -  Abdulrahman Alfakih - 2012721315</p>
+    </footer>
+
+    <script src="ecc.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
