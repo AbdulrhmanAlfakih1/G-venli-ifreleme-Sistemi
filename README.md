@@ -84,5 +84,8 @@ Proje açık kaynaklıdır. Katkılarınızı bekliyoruz:
 2. Değişikliklerinizi yapın
 3. Pull request gönderin
 
-Hataları "Issues" kısmından bildirebilirsiniz.
+---
+
+link Page
+(https://abdulrhmanalfakih1.github.io/G-venli-ifreleme-Sistemi/)
 ```
